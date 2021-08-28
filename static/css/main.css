@@ -1,0 +1,169 @@
+:root{
+	--heartPrimaryColour:blue;
+
+}
+body{
+	background-image: url('https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.2141697159.1629849600');
+}
+.heart {
+	background:rgb(255,104,108);
+	position: relative;
+	height: 30px;
+	width: 30px;
+	transform: rotate(-45deg) scale(1);
+	float:right;
+	top: 100px;
+	right: 50px;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: rotate(-45deg) scale(1);
+	}
+	
+	10% {
+		transform: rotate(-45deg) scale(1.1);
+	}
+	
+	20% {
+		transform: rotate(-45deg) scale(0.9);
+	}
+	
+	30% {
+		transform: rotate(-45deg) scale(1.2);
+	}
+
+	40% {
+		transform: rotate(-45deg) scale(0.9);
+	}
+
+	50% {
+		transform: rotate(-45deg) scale(1.05);
+	}
+
+	60% {
+		transform: rotate(-45deg) scale(0.95);
+	}
+
+	70% {
+		transform: rotate(-45deg) scale(1);
+	}
+}
+.heart::after {
+	background: inherit;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	
+}
+
+.heart::before {
+	background: inherit;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -50%;
+	height: 30px;
+	width: 30px;
+	
+}
+.heart:hover{
+    background:red;
+}
+.heart:active{
+    background:red;
+}
+
+
+
+.user-register{
+	background:white;
+	background-color: white;
+	border: solid gray;
+	box-shadow: 10px 5px 5px black; ;
+	border-radius: 2%;
+	
+}
+
+#content-wrapper{
+	display:flex;
+	
+	justify-content: space-between;
+	align-content: center;
+}
+
+
+.heart-liked {
+	background:red;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	transform: rotate(-45deg) scale(1);
+	float:right;
+	top: 100px;
+	right: 50px;
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: rotate(-45deg) scale(1);
+	}
+	
+	10% {
+		transform: rotate(-45deg) scale(1.1);
+	}
+	
+	20% {
+		transform: rotate(-45deg) scale(0.9);
+	}
+	
+	30% {
+		transform: rotate(-45deg) scale(1.2);
+	}
+
+	40% {
+		transform: rotate(-45deg) scale(0.9);
+	}
+
+	50% {
+		transform: rotate(-45deg) scale(1.05);
+	}
+
+	60% {
+		transform: rotate(-45deg) scale(0.95);
+	}
+
+	70% {
+		transform: rotate(-45deg) scale(1);
+	}
+}
+.heart-liked::after {
+	background: inherit;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	
+}
+
+.heart-liked::before {
+	background: inherit;
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -50%;
+	height: 30px;
+	width: 30px;
+	
+}

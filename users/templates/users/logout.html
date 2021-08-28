@@ -1,0 +1,15 @@
+{% extends 'post/main.html' %}
+
+{% load static %}
+{% block content %}
+    <div class="container user-register">
+        
+            <h2>You have been logged out</h2>
+            <div class="boreder-top pt-3">
+                <small class="text-muted">
+                    Login again <a href="{% url 'login' %}">Login</a>
+                </small>
+            </div>
+        
+    </div>
+{% endblock content %}
